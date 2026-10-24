@@ -1,1 +1,8 @@
-/
+<active-response>
+  <disabled>no</disabled>
+  <command>netsh</command>
+  <location>defined-agent</location>
+  <agent_id>001</agent_id>
+  <rules_id>60204</rules_id>
+  <timeout>120</timeout>
+</active-response>
