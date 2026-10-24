@@ -42,7 +42,7 @@ I attempted 2 wrong passwords. The rule did not fire and no block was created, b
 ## Test 2: brute-force attack
 Attack from Kali:
 ```bash
-hydra -l [LAB-USER] -P /usr/share/wordlists/rockyou.txt -t 1 -W 2 -s 3389 -vV rdp://192.168.56.1
+hydra -l testuser(or zaman) -P /usr/share/wordlists/rockyou.txt -t 1 -W 2 -s 3389 -vV rdp://192.168.56.1
 ```
 
 **Detection and response.** Failed logons (60122) accumulated, rule 60204 fired, and about one second later the active response ran (rule 657, `netsh.exe - add`):
